@@ -1,0 +1,118 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-contact {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.input input, .input textarea {
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    padding: 7px 10px;
+    outline: none;
+    background: rgb(191, 219, 238);
+}
+
+.input input[type="file"] {
+    background: none;
+}
+
+.input label {
+    width: 30%;
+    text-align: right;
+}
+
+.bouton-envoyer {
+    background: rgb(47, 142, 206);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.bouton-envoyer:hover {
+    background: rgb(1, 54, 90);
+}
+
+/* 
+.form-contact input {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(191, 219, 238);
+    outline: none;
+    padding: 7px 10px;
+}
+
+.form-contact textarea {
+    border: none;
+    width: 400px;
+    border-radius: 10px;
+    resize: vertical;
+    background: rgb(191, 219, 238);
+    outline: none;
+    padding: 7px 10px;
+}
+
+.form-contact label {
+    
+} */
+
+
+/* .form-bottom {
+        font-size: 3.2rem;
+        position: absolute;
+        top: 240px;
+        bottom: 0;
+        background: rgb(19,113,193);
+        background: linear-gradient(45deg, rgba(82, 58, 187, 0.3) 0%, rgba(54, 56, 173, 0.3) 38%, rgba(92, 26, 214, 0.3) 100%);
+        width: 200px;
+        height: 145px;
+        border-radius: 99% 91% 70% 100% / 100% 72% 100% 100%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-bottom:hover {
+    font-size: 3.2rem;
+    position: absolute;
+    top: 240px;
+    bottom: 0;
+    background: rgb(19,113,193);
+    background: linear-gradient(45deg, rgba(82, 58, 187, 0.3) 0%, rgba(54, 56, 173, 0.3) 38%, rgba(92, 26, 214, 0.3) 100%);
+    width: 200px;
+    height: 145px;
+    animation: progressBar 0.4s;
+    border-radius: 99% 91% 70% 100% / 100% 72% 100% 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes envoyerAnim {
+	0% {
+		border-radius: 99% 91% 70% 100% / 100% 72% 100% 100%;
+	}
+	100% {
+		border-radius: 54% 94% 61% 100% / 42% 46% 53% 59%;
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(8,0,88,1) 100%); 
+	}
+} */

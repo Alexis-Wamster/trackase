@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' type='text/css' href='./styles/style.css'>
+	<link rel='stylesheet' type='text/css' href='./styles/pageProduit.css'>
+	<title>Track-Case_Page-Produit</title>
+</head>
+<body>
+	<header>
+        <nav class="navbar">
+            <ul class="navbar-liste">
+                <div class="navbar-logo">
+                    <a href="index.html">
+                        <i class='bx bx-briefcase-alt'></i>
+                        <span>Trackase</span>
+                    </a>
+                </div>
+                <div class="navbar-items">
+                    <li class="navbar-item"><a href="index.html"><span class="icon"><i class='bx bxs-home'></i></span><span class="lien">Accueil</span></a></li>
+                    <li class="navbar-item"><a href="contact.html"><span class="icon"><i class='bx bxs-message'></i></span><span class="lien">Contact</span></a></li>
+                    <li class="navbar-item"><a href="faq.html"><span class="icon"><i class='bx bx-question-mark'></i></span><span class="lien">FAQ</span></a></li>
+					<li class="navbar-item"><a href="boutique.html"><span class="icon"><i class='bx bxs-briefcase-alt'></i></span><span class="lien">Boutique</span></a></li>
+                    <li class="navbar-item"><a href="nous.html"><span class="icon"><i class='bx bxs-group'></i></span><span class="lien">Nous</span></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+	<div class="index">
+		<div class="titre">Vos questions par thèmes</div>
+		<hr class="tire_sommaire" align="left">
+		<div class="raccourcis">
+			<div><a href="#produit">Le Produit</a></div>
+			<div><a href="#commander">Commander</a></div>
+			<div><a href="#caracteristiques">Caractéristiques détaillés</a></div>
+			<div><a href="#avis">Les avis</a></div>
+		</div>
+	</div>
+
+		<div class="pageProduit" id="produit">
+
+			<div class="infoProduit">
+				<div class="produit">
+					<img src="./images/valise1.jpg">
+				</div>
+				<div class="caracteristiques">
+					<h3><a name="produit">La valise de fou</a></h3>
+					<p>Connecté - géolocalisable - intelligente</p>
+					<div class="note" onclick="reference('avis,',70)">
+					</div>
+					<ul>
+						<li>Tarif d'achat : ?€</li>
+						<li>Tarif Location : ?€/jour</li>
+						<li>Frais de livraison : ?€</li>
+					</ul>
+				</div>
+			</div>
+
+			<hr>
+
+			<h3><a name="commande" id="commander">Commander</a></h3>
+			<div class="formulaireProduit">
+				<div class="bloc">
+					<input type="radio" name="quantité" id="quantité" checked="checked">
+					<label for="quantité">Quantité</label>
+					<div class="réponse">
+						<input type="number" name="quantité" placeholder="quantité">
+					</div>
+				</div>
+				<div class="bloc">
+					<input type="radio" name="recuperation" id="livraison" checked="checked">
+					<label for="livraison">Livraison</label>
+					<input type="radio" name="recuperation" id="clickAndCollect">
+					<label for="clickAndCollect">Click and collect</label>
+					<div class="réponse" id="livraisonElement">
+						<div class="sousBloc">
+							<input type="radio" name="lieu" id="adresse" checked="checked">
+							<label for="adresse">Adresse</label>
+							<input type="radio" name="lieu" id="pointRelais">
+							<label for="pointRelais">Point relais</label>
+							<div class="sousRéponse" id="adresseElement">
+								<input type="text" name="adresse" placeholder="Adresse">
+								<input type="number" name="codePostale" placeholder="Code postale">
+								<input type="text" name="commune" placeholder="Commune">
+							</div>
+							<div class="sousRéponse" id="pointRelaisElement">
+								<select>
+									<option>--Choisissez un point relais--</option>
+									<option>Livry sur seine</option>
+									<option>La Rochette</option>
+									<option>Melun</option>
+									<option>Dammarie-les-lys</option>
+									<option>Vaux le penil</option>
+									<option>Le Mée sur seine</option>
+									<option>Boissise-la-bertrand</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="réponse" id="clickAndCollectElement">
+						<select>
+							<option>--Choisissez une boutique--</option>
+							<option>Grenoble</option>
+							<option>lille</option>
+							<option>Lyon</option>
+							<option>Marseille</option>
+							<option>Montpellier</option>
+							<option>Nanthes</option>
+							<option>Nice</option>
+							<option>Paris</option>
+							<option>Poitier</option>
+							<option>Rennes</option>
+							<option>Strasbourg</option>
+							<option>Toulouse</option>
+						</select>
+					</div>
+				</div>
+				<div class="bloc">
+					<input type="radio" name="garder" id="Acheter" checked="checked">
+					<label for="Acheter">Acheter</label>
+					<input type="radio" name="garder" id="Louer">
+					<label for="Louer">Louer</label>
+					<div class="réponse" id="louerElement">
+						<p>Debut de location</p>
+						<input type="date" name="debut" min="calculer par javascript">
+						<p>Fin de location</p>
+						<input type="date" name="durée" min="calculer par javascript">
+					</div>
+					<div class="réponse" id="AcheterElement">
+						<p>Date de livraison</p>
+						<input type="date" name="debut" min="calculer par javascript">
+					</div>
+				</div>
+			</div>
+			<div class="confirmation">
+				<input type="checkbox" id="confirmerAchat">
+				<label for="confirmerAchat">Confirmer l'achat</label>
+				<input type="checkbox" id="ajouterPanier">
+				<label for="ajouterPanier">Ajouter au panier</label>
+			</div>
+
+			<hr>
+
+			<div class="détails" id="caracteristiques">
+				<h3><a name="caracteristiques">Caractéristiques détaillés</a></h3>
+			</div>
+
+			<hr>
+
+			<div class="commentaire">
+				<h3><a name="avis">Avis</a></h3>
+			</div>
+
+		</div>
+	<div class="votreCommentaire" id="avis">
+		<div class="note">
+			<div class="etoile"><img src="./images/étoile_Jaune.png"></div>
+			<div class="etoile"><img src="./images/étoile_Jaune.png"></div>
+			<div class="etoile"><img src="./images/étoile_Jaune.png"></div>
+			<div class="etoile"><img src="./images/étoile_Jaune.png"></div>
+			<div class="etoile"><img src="./images/étoile_grise.png"></div>
+		</div>
+		<div class="appréciation">
+			<textarea placeholder="Evaluer notre produit"></textarea>
+			<div class="submitCommentaire"></div>
+			<img src="./images/submit.png">
+		</div>
+	</div>
+
+	<script src="./script/boutique.js"></script>
+
+</body>
+</html>

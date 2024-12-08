@@ -1,0 +1,21 @@
+.boutique{
+	padding-top: 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.boutique .produit{
+	width: 200px;
+	height: 300px;
+	margin: 30px;
+	padding-bottom: 200px;
+}
+
+.boutique .produit:hover{
+	cursor: pointer;
+	width: 220px;
+	height: 330px;
+	margin: 15px 20px;
+}

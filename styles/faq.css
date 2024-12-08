@@ -1,0 +1,135 @@
+
+@media (max-width: 1080px) {
+	.index{
+		position: relative;
+		flex-direction: row;
+		width: 96%;
+		top: 120px;
+		background-color: #30468f;
+		box-shadow: 3px 3px 4px black;
+		border-radius: 10px;
+		padding: 10px 0px;
+		z-index: 10;
+	}
+	.index .raccourcis{
+		width: 100%;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 15px;
+	}
+	.index .raccourcis a{
+		margin: 20px;
+	}
+	.tire_sommaire{
+		height: 100%px;
+	}
+	.FAQ{
+		top: 300px;
+		left: 2%;
+	}
+	.FAQ details{
+		width: 96%;
+	}
+	.index .titre {
+		padding: 0 10px;
+	}
+}
+
+@media (min-width: 1081px) {
+	.index{
+		position: fixed;
+		flex-direction: column;
+		width: 250px;
+		height: 250px;
+		top: 20%;
+	}
+
+	.index .raccourcis{
+		height: 100%;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.tire_sommaire{
+		width: 100%;
+	}
+
+	.FAQ{
+		top: 150px;
+		left: 20%;
+	}
+	.FAQ details{
+		width: 60%;
+	}
+}
+
+.index{
+	display: flex;
+	justify-content: flex-start;
+	left: 2%;
+}
+
+.index .raccourcis{
+	display: flex;
+}
+
+.index a{
+	color: white;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+	text-decoration-line: none;
+	border-spacing: 20px;
+}
+
+.index a:hover{
+	color: black;
+}
+
+.FAQ{
+	position: relative;
+}
+
+h3{
+	font-size: 1.6rem;
+	margin-left: 2%;
+}
+
+.FAQ details{
+	margin: 20px 0;
+}
+
+.FAQ details > summary{
+	font: 32px "Open Sans", Calibri, sans-serif;
+  	border: none;
+  	box-shadow: 3px 3px 4px black;
+  	cursor: pointer;
+  	font-weight: bold;
+  	background-color: #4361aa;
+  	border-radius: 20px;
+	padding: 7px 15px;
+}
+
+.FAQ details > summary:hover, .FAQ details[open] > summary{
+	background-color: #30468f;
+}
+
+.FAQ details > p {
+  	border-radius: 0 0 10px 10px;
+  	margin: 10px 0px;
+  	box-shadow: 3px 3px 4px black;
+  	background-color: #6b99e0;
+  	border-radius: 20px;
+	padding: 7px 15px;
+	line-height: 25px;
+	font-size: 20px;
+}
+
+.FAQ .question_saisie{
+	width: 30%;
+	height: 200px;
+}
+
+body {
+	overflow-x: hidden;
+}

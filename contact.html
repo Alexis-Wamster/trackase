@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Trackcase | Contact</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <ul class="navbar-liste">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <i class='bx bx-briefcase-alt'></i>
+                    <span>Trackase</span>
+                </a>
+            </div>
+            <div class="navbar-items">
+                <li class="navbar-item"><a href="index.html"><span class="icon"><i class='bx bxs-home'></i></span><span class="lien">Accueil</span></a></li>
+                <li class="navbar-item"><a href="contact.html"><span class="icon"><i class='bx bxs-message'></i></span><span class="lien">Contact</span></a></li>
+                <li class="navbar-item"><a href="faq.html"><span class="icon"><i class='bx bx-question-mark'></i></span><span class="lien">FAQ</span></a></li>
+                <li class="navbar-item"><a href="boutique.html"><span class="icon"><i class='bx bxs-briefcase-alt'></i></span><span class="lien">Boutique</span></a></li>
+                <li class="navbar-item"><a href="nous.html"><span class="icon"><i class='bx bxs-group'></i></span><span class="lien">Nous</span></a></li>
+            </div>
+        </ul>
+    </nav>
+  </header>
+  <div class="form-container">
+    <form class="form-contact">
+      <div class="input">
+        <label for="nom">Nom*</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      <div class="input">
+        <label for="prenom">Prénom*</label>
+        <input type="text" id="prenom" name="prenom" required>
+      </div>
+      <div class="input">
+        <label for="mail">E-mail*</label>
+        <input type="text" id="mail" name="mail" required>
+      </div>
+      <div class="input">
+        <label for="tel">Tél.</label>
+        <input type="text" pattern="[0-9]*" id="tel" name="tel">
+      </div>
+      <div class="input">
+        <label for="objet">Objet*</label>
+        <input id="objet" name="objet" required>
+      </div>
+      <div class="input">
+        <label for="message">Message*</label>
+        <textarea id="message" name="message" rows="10" required></textarea>
+      </div>
+      <div class="input">
+        <label for="file">Pièce jointe</label>
+        <input type="file" id="file" name="file">
+      </div>
+      <input class="bouton-envoyer" type="submit" value="Envoyer">
+    </form>
+  </div>
+
+</body>
+</html>

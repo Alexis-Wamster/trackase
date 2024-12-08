@@ -1,0 +1,17 @@
+.prenom-nom {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.sous-titre {
+    font-size: 2.1rem;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contenu {
+    font-size: 1.4rem;
+    padding: 5px 35px;
+}
